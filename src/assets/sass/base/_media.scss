@@ -1,0 +1,305 @@
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 1140px;
+    }
+
+    .promo {
+        background-position: bottom 0px right -110px;
+    }
+
+    .benefits {
+        .swiper {
+            &__header {
+                min-height: 44px;
+            }
+        }
+    }
+
+    .gallery {
+        &__item {
+            &_5 {
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .promo {
+        background-position: bottom 0px right -240px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+
+    header {
+        .header {
+            .burger {
+                display: block;
+            }
+            .wrapper {
+                .header__items:nth-child(2) {
+                    display: none;
+                }
+            }
+            &__logo {
+                margin-right: 0px;
+            }
+            &__info {
+                gap: 18px;
+            }
+            &__phone{
+                img {
+                    margin-right: 0;
+                }
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .promo {
+        background-position: bottom 0px right -370px;
+
+        &__header {
+            padding-top: 55px;
+            font-size: 38px;
+            line-height: 52px;
+        }
+        &__describe {
+            margin-bottom: 55px;
+        }
+        &__btn {
+            .btn_smooth {
+                display: none;
+            }
+        }
+        .btn_opened {
+            display: block;
+        }
+        &__value {
+            width: 43%;
+        }
+        &__information {
+            width: 57%;
+            height: 238px;
+        }
+        &__item-text {
+            div {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 136px;
+        padding-bottom: 136px;
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__description {
+            max-width: 530px;
+        }
+        &__photo {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .benefits {
+        &__img-promo {
+            height: 269px;
+        }
+        .swiper {
+            margin-top: 46px;
+            &-prev, &-next {
+                width: 34px;
+                height: 34px;
+            }
+            .arrowP {
+                &::after {
+                    top: 30%;
+                }
+            }
+            .arrowN {
+                &::after {
+                    top: 30%;
+                    left: 20%;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        &__item {
+            &_5 {
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    header {
+        background-color: #ffffff;
+    }
+    
+    .promo {
+        background: url('./assets/image/bg.png') rgba(36, 36, 36, 0.6);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        &__header {
+            text-align: center;
+            color: #F6F8FB;
+        }
+        &__describe {
+            text-align: center;
+            width: 100%;
+            color: #F6F8FB;
+        }
+        .btn_opened {
+            margin: 0 auto;
+        }
+        &__value {
+            width: 100%;
+            margin-top: 121px;
+            height: 135px;
+        }
+        &__information {
+            display: none;
+        }
+    }
+
+    .about {
+        padding-top: 84px;
+        padding-bottom: 84px;
+        &__wrapper {
+            gap: 50px;
+        }
+        &__photo {
+            height: 280px;
+        }
+    }
+
+    .benefits {
+        padding-bottom: 84px;
+        &__header {
+            h2 {
+                margin: 0 0 50px 0;
+            }
+        }
+        &__img-promo {
+            height: 250px;
+        }
+       .swiper {
+            width: 70%;
+            &-slide {
+                text-align: center;
+            }
+            &__header {
+                min-height: 22px;
+            }
+       }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        background-color: #ffffff;
+        .container {
+            .header {
+                &__language {
+                    display: none;
+                }   
+            }
+        }
+    }
+
+    .promo {
+        background: url('./assets/image/bg.png') rgba(36, 36, 36, 0.6);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        &__header {
+            padding-top: 107px;
+            font-size: 30px;
+            line-height: 45px;
+            width: 100%;
+            color: #F6F8FB;
+        }
+        &__describe {
+            text-align: center;
+            width: 100%;
+            color: #F6F8FB;
+            margin-bottom: 47px;
+        }
+        .btn_opened {
+            width: 100%;
+        }
+        &__value {
+            margin: 0;
+            padding-top: 50px;
+            padding-bottom: 75px;
+            background: none;
+            height: 50px;
+        }
+    }
+
+    .about {
+        padding-top: 84px;
+        padding-bottom: 84px;
+        &__wrapper {
+            gap: 32px;
+        }
+        &__photo {
+            height: 175px;
+        }
+    }
+
+    .benefits {
+        &__header {
+            h2 {
+                font-size: 28px;
+                margin: 0 0 32px 0;
+            }
+        }
+        &__img-promo {
+            height: 169px;
+        }
+        .swiper {
+            margin-top: 32px;
+            &__header {
+                font-size: 16px;
+            }
+        }
+    }
+}

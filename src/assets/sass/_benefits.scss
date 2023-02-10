@@ -1,0 +1,109 @@
+.benefits {
+    background-color: #E1EAF7;
+    padding-bottom: 160px;
+    &__header {
+        h2 {
+            width: 130px;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #0E1117;
+            text-transform: uppercase;
+            margin: 0 0 62px 0;
+        }
+    }
+    &__img-promo {
+
+        width: 100%;
+        height: 422px;
+        background: url('./assets/image/house_benefits.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // Swiper
+    .container {
+        position: relative;
+    }
+    .swiper {
+        position: static;
+        margin-top: 62px;
+        width: 85%;
+        &__header {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+        &__description {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 24px;
+        }
+        &-prev, &-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background-color: #fff;
+            z-index: 10;
+        }
+        &-next {
+            right: 0;
+        }
+        &-prev {
+            left: 0;
+        }
+        .arrowP, .arrowN {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: all .3s;
+            &::after {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background-color: rgba($color: #fff, $alpha: 0);
+                position: absolute;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                transition: all .3s;
+            }
+            &:hover::after {
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+                transition: all .3;
+            }
+            &:hover {
+                background-color: #23324C;
+                transition: all .3s;
+                cursor: pointer;
+            }
+            &:active {
+                background-color: #151E2E;
+                transition: all .1s;
+            }
+        }
+        &-button-disabled {
+            opacity: 0.65;
+            transition: all .6s;
+        }
+        .arrowP {
+            &::after {
+                top: 35%;
+                left: 40%;
+                transform:rotate(230deg);
+            }
+        }
+        .arrowN {
+            &::after {
+                top: 35%;
+                left: 25%;
+                transform:rotate(40deg);
+            }
+        }
+    }
+}

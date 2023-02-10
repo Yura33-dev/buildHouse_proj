@@ -1,0 +1,47 @@
+.gallery {
+    background-color: #E1EAF7;
+    padding-bottom: 160px;
+
+    .h-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 51px;
+    }
+
+    &__header {
+        h2 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+    &__describe {
+        h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+        }
+    }
+    &__container {
+        margin-top: 57px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 302px);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        grid-gap: 24px;
+        justify-content: flex-start;
+    }
+    &__item {
+        &_5 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}

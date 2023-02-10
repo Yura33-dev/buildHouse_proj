@@ -1,0 +1,44 @@
+@import './assets/sass/libs/normalize.scss';
+@import './assets/sass/fonts.scss';
+
+@import './assets/sass/btns';
+
+@import './assets/sass/header';
+@import './assets/sass/promo';
+@import './assets/sass/about';
+@import './assets/sass/benefits';
+@import './assets/sass/steps';
+@import './assets/sass/gallery';
+
+
+
+@import './assets/sass/base/media';
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.show-flex {
+    display: flex;
+    transition: all .4s;
+}
+
+.show-block {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes fade {        
+    from { opacity: 0 }             
+    to { opacity: 1; }
+}
+
+.fadeAimate {
+    animation: fade 2s;
+}

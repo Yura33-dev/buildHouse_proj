@@ -38,7 +38,50 @@
         grid-gap: 24px;
         justify-content: flex-start;
     }
+    &__zoom {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+        opacity: 0;
+        transition: fill .3s;
+        &:hover {
+            cursor: pointer;
+            .zoom {
+                fill: #9BB1D1;
+                transition: fill .3s;
+            }
+        }
+    }
     &__item {
+        position: relative;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 99%;
+            background: rgba(24, 24, 24, 0.44);
+            backdrop-filter: blur(25px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+            transition: opacity .3s;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+                cursor: pointer;
+                transition: opacity .3s;
+            }
+            .gallery__zoom {
+                opacity: 1;
+            }
+        }
+       
         &_5 {
             grid-column-start: 1;
             grid-column-end: 3;

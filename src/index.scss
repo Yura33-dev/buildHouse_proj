@@ -9,6 +9,9 @@
 @import './assets/sass/benefits';
 @import './assets/sass/steps';
 @import './assets/sass/gallery';
+@import './assets/sass/calc';
+@import './assets/sass/contacts';
+@import './assets/sass/footer';
 
 
 
@@ -32,13 +35,4 @@ html {
 
 .hide {
     display: none;
-}
-
-@keyframes fade {        
-    from { opacity: 0 }             
-    to { opacity: 1; }
-}
-
-.fadeAimate {
-    animation: fade 2s;
 }

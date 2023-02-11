@@ -8,7 +8,7 @@
         gap: 110px;
     }
     &__header {
-        min-width: 500px;
+        min-width: 137px;
         h2 {
             margin: 0;
             font-weight: 700;
@@ -142,6 +142,7 @@
         overflow: hidden;
         transform: translateY(6px);
         padding-left: 9px;
+        transition: transform .4s;
         &::before {
             content: '';
             width: 8px;
@@ -166,6 +167,10 @@
             .steps__hover-item {
                 display: flex;
             }
+            .steps__black-rec {
+                transition: transform .4s;
+                transform: rotate3d(0,0,1, 180deg);
+            }
         }
     }
     &__hover-item {
@@ -187,7 +192,7 @@
             bottom: -118px;
         }
         &_2 {
-            bottom: -140px;
+            bottom: -118px;
         }
         &_3 {
             flex-direction: column;
@@ -197,7 +202,7 @@
                 align-items: flex-start;
                 gap: 16px;
             }
-            bottom: -292px;
+            bottom: -342px;
         }
         &_4 {
             flex-direction: column;
@@ -207,7 +212,7 @@
                 align-items: flex-start;
                 gap: 16px;
             }
-            bottom: -204px;
+            bottom: -182px;
         }
         &_5 {
             flex-direction: column;
@@ -217,7 +222,7 @@
                 align-items: flex-start;
                 gap: 16px;
             }
-            bottom: -444px;
+            bottom: -446px;
         }
         &_6 {
             flex-direction: column;
@@ -250,19 +255,19 @@
         &_1 {
             width: 216px;
             &::before {
-                left: 0;
+                left: -2px;
             }
         }
         &_2 {
             &::before {
-                left: 3px;
+                left: -2px;
             }
             width: 281px;
         }
         &_3 {
-            width: 243px;
+            width: 234px;
             &::before {
-                left: -5px;
+                left: -7px;
             }
             &_withoutBefore {
                 &::before {
@@ -273,7 +278,7 @@
         &_4 {
             width: 272px;
             &::before {
-                left: 32px;
+                left: 27px;
             }
             &_withoutBefore {
                 &::before {
@@ -284,7 +289,7 @@
         &_5 {
             width: 280px;
             &::before {
-                left: 36px;
+                left: 34px;
             }
             &_withoutBefore {
                 &::before {
@@ -295,7 +300,7 @@
         &_6 {
             width: 234px;
             &::before {
-                left: 19px;
+                left: 17px;
             }
             &_withoutBefore {
                 &::before {

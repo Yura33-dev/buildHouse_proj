@@ -21,6 +21,39 @@
         }
     }
 
+    .steps {
+        &__item {
+            &:nth-child(1) {
+                width: 362px;
+                &::before {
+                    left: 142px;
+                }
+            }
+            &:nth-child(2) {
+                width: 436px;
+            }
+            &:nth-child(3) {
+                &::before {
+                    left: 199px;
+                }
+            }
+            &:nth-child(4) {
+                width: 362px;
+                &::before {
+                    left: 142px;
+                }
+            }
+            &:nth-child(5) {
+                width: 436px;
+            }
+            &:nth-child(6) {
+                &::before {
+                    left: 199px;
+                }
+            }
+        }
+    }
+
     .gallery {
         &__item {
             &_5 {
@@ -40,6 +73,53 @@
         background-position: bottom 0px right -240px;
     }
 
+    .steps {
+        &__wrapper {
+            &::before {
+                content: none;
+            }
+        }
+        &__item {
+            justify-content: center;
+            &:nth-child(1) {
+                width: 444px;
+                &::before {
+                    left: 142px;
+                }
+            }
+            &:nth-child(2) {
+                width: 511px;
+            }
+            &:nth-child(3) {
+                width: 506px;
+                padding-top: 50px;
+                &::before {
+                    left: 199px;
+                }
+            }
+            &:nth-child(4) {
+                width: 325px;
+                padding-top: 50px;
+                &::before {
+                    left: 142px;
+                }
+            }
+            &:nth-child(5) {
+                width: 540px;
+                padding-top: 50px;
+            }
+            &:nth-child(6) {
+                width: 318px;
+                padding-top: 50px;
+                &::before {
+                    left: 199px;
+                }
+            }
+            &::before {
+                content: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -144,6 +224,10 @@
                 }
             }
         }
+    }
+
+    .steps {
+        
     }
 
     .gallery {

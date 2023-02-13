@@ -38,6 +38,11 @@ footer {
                 letter-spacing: 0.5px;
                 color: #E1EAF7;
                 text-decoration: none;
+
+                transition: text-shadow 200ms;
+                &:hover {
+                    text-shadow: 0 0 .45px #fff, 0 0 .45px #fff;
+                }
             }
         }
         &__form {

@@ -530,30 +530,47 @@
 
                     <div class="calc__main">
                         <div class="calc__triangle"></div>
+
                         <div class="calc__left">
 
                             <div class="calc__logo">
                                 <img src="./assets/image/icons/logo.svg" alt="logotype">
                             </div>
 
-                            <div class="calc__steps">
-                                <div class="calc__item">
-                                    <div class="calc__check"></div>
+                            <ul class="calc__steps">
+                                <li class="calc__item calc__item_current">
+                                    <div class="calc__check">
+                                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="check" d="M5.88628 11.1765L0.968628 6.25883L2.19804 5.02942L5.88628 8.71766L13.802 0.801971L15.0314 2.03138L5.88628 11.1765Z"/>
+                                        </svg>
+                                    </div>
                                     <div class="calc__title">Вводные данные</div>
-                                </div>
-                                <div class="calc__item">
-                                    <div class="calc__check"></div>
+                                </li>
+                                <li class="calc__item">
+                                    <div class="calc__check">
+                                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="check" d="M5.88628 11.1765L0.968628 6.25883L2.19804 5.02942L5.88628 8.71766L13.802 0.801971L15.0314 2.03138L5.88628 11.1765Z"/>
+                                        </svg>
+                                    </div>
                                     <div class="calc__title">Основные материалы</div>
-                                </div>
-                                <div class="calc__item">
-                                    <div class="calc__check"></div>
+                                </li>
+                                <li class="calc__item">
+                                    <div class="calc__check">
+                                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="check" d="M5.88628 11.1765L0.968628 6.25883L2.19804 5.02942L5.88628 8.71766L13.802 0.801971L15.0314 2.03138L5.88628 11.1765Z"/>
+                                        </svg>
+                                    </div>
                                     <div class="calc__title">Второстепенные работы</div>
-                                </div>
-                                <div class="calc__item">
-                                    <div class="calc__check"></div>
+                                </li>
+                                <li class="calc__item">
+                                    <div class="calc__check">
+                                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="check" d="M5.88628 11.1765L0.968628 6.25883L2.19804 5.02942L5.88628 8.71766L13.802 0.801971L15.0314 2.03138L5.88628 11.1765Z"/>
+                                        </svg>
+                                    </div>
                                     <div class="calc__title">Дополнительно</div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
 
                             <div class="calc__img">
                                 <img src="./assets/image/calc/draw_img.svg" alt="draw image">
@@ -563,7 +580,93 @@
                         </div>
 
                         <div class="calc__right">
+                            <div class="calc__header"><h3>Вводные данные</h3></div>
+                            <div class="calc__describe">Выберите нужные варианты и нажмите на кнопку "Далее" </div>
 
+                            <div class="calc__inputs-area">
+
+                                <div class="calc__input">
+                                    <label for="m2">Укажите площадь дома</label>
+                                    <input type="text" required name="m2" placeholder="Площадь дома, м2">
+                                </div>
+
+                                <div class="calc__select">
+                                    Выберите вариант
+
+                                    <div class="calc__label">Геодезические исследования</div>
+                                    <div class="calc__arrow"></div>
+                                    <div class="calc__sub">
+                                        <div class="calc__option">Проведены</div>
+                                        <div class="calc__option">Не проведены</div>
+                                        <div class="calc__option">Не включать в расчет</div>
+                                    </div>
+                                </div> 
+
+                                <div class="calc__select">
+                                    Выберите вариант
+
+                                    <div class="calc__label">Этажность дома</div>
+                                    <div class="calc__arrow"></div>
+                                    <div class="calc__sub">
+                                        <div class="calc__option">1 этаж</div>
+                                        <div class="calc__option">2 этажа</div>
+                                        <div class="calc__option">3 этажа</div>
+                                    </div>
+                                </div> 
+
+                                <div class="calc__select">
+                                    Выберите вариант
+
+                                    <div class="calc__label">Разработан ли проект дома</div>
+                                    <div class="calc__arrow"></div>
+                                    <div class="calc__sub">
+                                        <div class="calc__option">Да</div>
+                                        <div class="calc__option">Нет</div>
+                                        <div class="calc__option">Не включать в расчет</div>
+                                    </div>
+                                </div> 
+<!--                                 
+                                <div>
+                                    <label for="geo">Геодезические исследования</label>
+                                    <select name="geo" id="">
+                                        <option selected value="">Выберите вариант</option>
+                                        <option  value="">Проведены</option>
+                                        <option  value="">Не проведены</option>
+                                    </select>
+                                </div>
+                                
+
+                                <div>
+                                    <label for="floors">Этажность дома</label>
+                                    <select name="floors" id="">
+                                        <option selected value="">Выберите вариант</option>
+                                        <option  value="">1 этаж</option>
+                                        <option  value="">2 этажа</option>
+                                        <option  value="">3 этажа</option>
+                                    </select>
+                                </div>
+                               
+                                <div>
+                                    <label for="project">Разработан ли проект дома</label>
+                                    <select name="project" id="">
+                                        <option selected value="">Выберите вариант</option>
+                                        <option  value="">Не разработан</option>
+                                        <option  value="">Проект разработан</option>
+                                    </select>
+                                </div> -->
+                            </div>
+
+                            <div class="calc__progress"></div>
+
+                            <div class="calc__btn-wrapper">
+                                <button class="btn btn_calc">
+                                    Далее
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 12.5L8.6 11.05L12.15 7.5H0V5.5H12.15L8.6 1.95L10 0.5L16 6.5L10 12.5Z" fill="white"/>
+                                    </svg>
+                                        
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -696,6 +799,8 @@
                 </div>    
             </div>
         </footer>
+        
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </body>
 </html>

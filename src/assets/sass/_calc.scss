@@ -196,16 +196,16 @@
         margin-top: 54px;
         &:hover {
             cursor: pointer;
-            // .calc__sub {
-            //     display: block;
-            //     visibility: visible;
-            //     opacity: 1;
-            //     transition: opacity .3s;
+            .calc__sub {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                transition: opacity .3s;
                 
-            // }
+            }
             .calc__arrow {
-                // transition: transform .3s;
-                // transform: rotate(180deg);
+                transition: transform .3s;
+                transform: rotate(180deg);
             }
         }
     }
@@ -232,8 +232,6 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity .3s;
-
-        
     }
     &__option {
         box-sizing: border-box;

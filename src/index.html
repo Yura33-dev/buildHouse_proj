@@ -28,14 +28,64 @@
                             </div>
                         </div>
                         <div class="header__items">
-                            <nav class="header__nav">
-                                <ul>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Услуги</a></li>
-                                    <li><a href="#">Стоимость</a></li>
-                                    <li><a href="#">Галерея</a></li>
-                                    <li><a href="#">Блог</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                            <nav>
+                                <ul class="header__main-ul" >
+                                    <li class="header__main-li"><a class="header__main-li-links" href="#">О нас</a></li>
+
+                                    <li class="header__main-li">
+                                        <a class="header__main-li-links" href="#">Услуги</a>
+                                        <span class="header__arrow"></span>
+
+                                        <ul class="header__dropdown-ul">
+                                            <li class="header__dropdown-li">
+                                                <a href="#">Дома</a>
+                                                <div class="arrow-right"></div>
+
+                                                <ul class="header__dropdown-ul nest">
+                                                    <li class="header__dropdown-li">
+                                                        <a href="#">Деревянные дома</a>
+                                                    </li>
+                                                    <li class="header__dropdown-li">
+                                                        <a href="#">А-дома</a>
+                                                    </li>
+                                                    <li class="header__dropdown-li">
+                                                        <a href="#">Модульные дома</a>
+                                                    </li>
+                                                    <li class="header__dropdown-li">
+                                                        <a href="#">Каркасно-монолитные дома</a>
+                                                    </li>
+                                                    <li class="header__dropdown-li">
+                                                        <a href="#">Каркасные дома</a>
+                                                    </li>
+                                                       
+                                                </ul>
+
+                                            </li>
+                                            <li class="header__dropdown-li" >
+                                                <a href="#">Беседки</a>
+                                                
+                                            </li>
+                                            <li class="header__dropdown-li" >
+                                                <a href="#">Мобильные офисы</a>
+                                               
+                                            </li>
+                                            <li class="header__dropdown-li" >
+                                                <a href="#">Торговые центры</a>
+                                                
+                                            </li>
+                                            <li class="header__dropdown-li" >
+                                                <a href="#">Железно-бетонные конструкции</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+
+                                    <li class="header__main-li">
+                                        <a class="header__main-li-links" href="#">Стоимость</a>
+                                    </li>
+                                    <li class="header__main-li"><a class="header__main-li-links" href="#">Галерея</a></li>
+                                    <li class="header__main-li"><a class="header__main-li-links" href="#">Блог</a></li>
+                                    <li class="header__main-li"><a class="header__main-li-links" href="#">Контакты</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -188,24 +238,23 @@
                             <div class="steps__num">1</div>
                             <div class="steps__main">
 
-                            
-                                <div class="steps__hover-item steps__hover-item_1">
-                                    <div class="steps__hover-img">
-                                        <img src="./assets/image/hover_cards/1.svg" alt="offer">
-                                    </div>
-                                    <div class="steps__hover-text steps__hover-text_1">
-                                        Оговариваем все детали по строительству дома под ключ
-                                    </div>
-                                </div>
-
                                 <div class="steps__title">Консультация</div>
                                 <div>
-                                    <span class="steps__days">1 день</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        1 день
+                                        <span class="steps__black-rec"></span>
+                                    </span>
+                                    
                                 </div>
-                               
-                            
-                               
+                            </div>
+
+                            <div class="steps__hover-item steps__hover-item_1">
+                                <div class="steps__hover-img">
+                                    <img src="./assets/image/hover_cards/1.svg" alt="offer">
+                                </div>
+                                <div class="steps__hover-text steps__hover-text_1">
+                                    Оговариваем все детали по строительству дома под ключ
+                                </div>
                             </div>
                         </div>
 
@@ -214,23 +263,26 @@
                             <div class="steps__num">2</div>
                             <div class="steps__main">
 
-                                <div class="steps__hover-item steps__hover-item_2">
-                                    <div class="steps__hover-img">
-                                        <img src="./assets/image/hover_cards/2_1.svg" alt="offer">
-                                    </div>
-                                    <div class="steps__hover-text steps__hover-text_2">
-                                        Заключение всех формальностей, формирование цены, подписание договора
-                                    </div>
-                                </div>
-                            
-
                                 <div class="steps__title">Подписание договора</div>
                                 <div>
-                                    <span class="steps__days">1-2 дня</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        1-2 дня
+                                        <span class="steps__black-rec"></span>
+                                    </span>
+                                    
                                 </div>
                                
                             </div>
+
+                            <div class="steps__hover-item steps__hover-item_2">
+                                <div class="steps__hover-img">
+                                    <img src="./assets/image/hover_cards/2_1.svg" alt="offer">
+                                </div>
+                                <div class="steps__hover-text steps__hover-text_2">
+                                    Заключение всех формальностей, формирование цены, подписание договора
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <!-- 3 -->
@@ -238,76 +290,76 @@
                             <div class="steps__num">3</div>
                             <div class="steps__main">
 
-                                
-                                <div class="steps__hover-item steps__hover-item_3">
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/3_1.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_3">
-                                            Определяем лучшее размещение дома на участке
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/3_2.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_3 steps__hover-text_3_withoutBefore">
-                                            Анализируем существующие коммуникационные и инженерные сети
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/3_3.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_3 steps__hover-text_3_withoutBefore">
-                                            Производим съемку и замеры участка для дальнейшей визуализации возводимых объектов
-                                        </div>
-                                    </div>
-                                </div>
-    
-                        
-                                
                                 <div class="steps__title">Инспекция участка</div>
                                 <div>
-                                    <span class="steps__days">1 день</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        1 день
+                                        <span class="steps__black-rec"></span>
+                                    </span>
                                 </div>
                                 
                             </div>
+
+                            <div class="steps__hover-item steps__hover-item_3">
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/3_1.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_3">
+                                        Определяем лучшее размещение дома на участке
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/3_2.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_3 steps__hover-text_3_withoutBefore">
+                                        Анализируем существующие коммуникационные и инженерные сети
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/3_3.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_3 steps__hover-text_3_withoutBefore">
+                                        Производим съемку и замеры участка для дальнейшей визуализации возводимых объектов
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
 
                          <!-- 4 -->
-                         <div class="steps__item">
+                        <div class="steps__item">
                             <div class="steps__num">4</div>
                             <div class="steps__main">
-
-                            
-                                <div class="steps__hover-item steps__hover-item_4">
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/4_1.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_4">
-                                            Разработка индивидуального проекта с учетом пожеланий клиента
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/4_2.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_4 steps__hover-text_4_withoutBefore">
-                                            Согласование проекта во всех инстанциях
-                                        </div>
-                                    </div>
-                                </div>
-                            
-
+                
                                 <div class="steps__title"> Проектирование</div>
                                 <div>
-                                    <span class="steps__days">14-30 дней</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        14-30 дней
+                                        <span class="steps__black-rec"></span>
+                                    </span>
                                 </div>  
+                            </div>
+
+                            <div class="steps__hover-item steps__hover-item_4">
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/4_1.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_4">
+                                        Разработка индивидуального проекта с учетом пожеланий клиента
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/4_2.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_4 steps__hover-text_4_withoutBefore">
+                                        Согласование проекта во всех инстанциях
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -316,81 +368,83 @@
                         <div class="steps__item">
                             <div class="steps__num">5</div>
                             <div class="steps__main">
-                               
-                                <div class="steps__hover-item steps__hover-item_5">
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_1.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5">
-                                            Подготовка участка 
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_2.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Сооружение фундамента
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_3.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Возведение стен и устройство перекрытий
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_4.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Возведение перегородок и установка кровли дома
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_5.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Гидро-, тепло-, звукоизоляция
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_6.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Установка окон и дверей
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_7.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Монтаж инженерных и коммуникационных сетей
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/5_8.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
-                                            Внутрення и внешняя отделка дома (опционально)
-                                        </div>
-                                    </div>
-                                </div>
-                               
-
+            
                                 <div class="steps__title">Строительные работы</div>
                                 <div>
-                                    <span class="steps__days">1-6 месяцев</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        1-6 месяцев
+                                        <span class="steps__black-rec"></span>
+                                    </span>
                                 </div>
                             </div>
+
+                            <div class="steps__hover-item steps__hover-item_5">
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_1.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5">
+                                        Подготовка участка 
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_2.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Сооружение фундамента
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_3.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Возведение стен и устройство перекрытий
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_4.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Возведение перегородок и установка кровли дома
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_5.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Гидро-, тепло-, звукоизоляция
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_6.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Установка окон и дверей
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_7.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Монтаж инженерных и коммуникационных сетей
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/5_8.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_5 steps__hover-text_5_withoutBefore">
+                                        Внутрення и внешняя отделка дома (опционально)
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
 
@@ -399,54 +453,62 @@
                             <div class="steps__num">6</div>
                             <div class="steps__main">
 
-                                <div class="steps__hover-item steps__hover-item_6">
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/6_1.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_6">
-                                            Уборка территории и вывоз строительного мусора
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/6_2.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_6 steps__hover-text_6_withoutBefore">
-                                            Получение документов для эксплуатации дома
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="steps__hover-img">
-                                            <img src="./assets/image/hover_cards/6_3.svg" alt="offer">
-                                        </div>
-                                        <div class="steps__hover-text steps__hover-text_6 steps__hover-text_6_withoutBefore">
-                                            Передача ключей от готового дома
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="steps__title">Ввод в эксплуатацию</div>
                                 <div>
-                                    <span class="steps__days">7-14 дней</span>
-                                    <span class="steps__black-rec"></span>
+                                    <span class="steps__days">
+                                        7-14 дней
+                                        <span class="steps__black-rec"></span>
+                                    </span>
+                                    
                                 </div>
                                
                             </div>
+
+                            <div class="steps__hover-item steps__hover-item_6">
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/6_1.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_6">
+                                        Уборка территории и вывоз строительного мусора
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/6_2.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_6 steps__hover-text_6_withoutBefore">
+                                        Получение документов для эксплуатации дома
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="steps__hover-img">
+                                        <img src="./assets/image/hover_cards/6_3.svg" alt="offer">
+                                    </div>
+                                    <div class="steps__hover-text steps__hover-text_6 steps__hover-text_6_withoutBefore">
+                                        Передача ключей от готового дома
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <section class="gallery">
+            <!-- <section class="gallery">
                 <div class="container">
-                    <div class="h-wrapper">
-                        <div class="gallery__header"><h2>Галерея</h2></div>
-                        <div class="gallery__describe">
-                            <h3>Проекты и построенные дома</h3>
+                    <div class="a-wrapper">
+                        <div class="h-wrapper">
+                            <div class="gallery__header"><h2>Галерея</h2></div>
+                            <div class="gallery__describe">
+                                <h3>Проекты и построенные дома</h3>
+                            </div>
                         </div>
+                        <div class="gallery__more"><a href="#" class="gallery__link-more">Смотреть больше</a></div>
                     </div>
+                    
 
                     <div class="gallery__container">
                         <div class="gallery__item gallery__item_1">
@@ -483,9 +545,9 @@
                                     <path class="zoom" d="M24.0313 16.8438C24.0313 17.2251 23.8798 17.5907 23.6102 17.8603C23.3406 18.1299 22.975 18.2813 22.5938 18.2813H18.2813V22.5938C18.2813 22.9751 18.1298 23.3407 17.8602 23.6103C17.5906 23.8799 17.225 24.0313 16.8438 24.0313C16.4625 24.0313 16.0969 23.8799 15.8273 23.6103C15.5577 23.3407 15.4063 22.9751 15.4063 22.5938V18.2813H11.0938C10.7125 18.2813 10.3469 18.1299 10.0773 17.8603C9.8077 17.5907 9.65625 17.2251 9.65625 16.8438C9.65625 16.4626 9.8077 16.097 10.0773 15.8274C10.3469 15.5578 10.7125 15.4063 11.0938 15.4063H15.4063V11.0938C15.4063 10.7126 15.5577 10.347 15.8273 10.0774C16.0969 9.8078 16.4625 9.65635 16.8438 9.65635C17.225 9.65635 17.5906 9.8078 17.8602 10.0774C18.1298 10.347 18.2813 10.7126 18.2813 11.0938V15.4063H22.5938C22.975 15.4063 23.3406 15.5578 23.6102 15.8274C23.8798 16.097 24.0313 16.4626 24.0313 16.8438ZM37.2742 37.2743C36.9995 37.54 36.6322 37.6885 36.25 37.6885C35.8678 37.6885 35.5005 37.54 35.2258 37.2743L27.4633 29.4938C24.194 32.2398 19.9909 33.6177 15.7304 33.34C11.47 33.0624 7.48118 31.1506 4.59598 28.0036C1.71078 24.8565 0.151923 20.717 0.244533 16.4486C0.337144 12.1801 2.07407 8.11213 5.09305 5.09314C8.11204 2.07416 12.18 0.337235 16.4485 0.244625C20.7169 0.152015 24.8564 1.71087 28.0035 4.59607C31.1506 7.48128 33.0623 11.4701 33.3399 15.7305C33.6176 19.991 32.2397 24.1941 29.4938 27.4634L37.2742 35.2259C37.5442 35.4984 37.6956 35.8665 37.6956 36.2501C37.6956 36.6337 37.5442 37.0018 37.2742 37.2743ZM16.8438 30.5001C19.5447 30.5001 22.185 29.6992 24.4308 28.1986C26.6765 26.698 28.4269 24.5652 29.4605 22.0699C30.4941 19.5745 30.7645 16.8287 30.2376 14.1796C29.7107 11.5306 28.41 9.09728 26.5002 7.18742C24.5903 5.27756 22.157 3.97693 19.508 3.45C16.8589 2.92307 14.1131 3.19351 11.6177 4.22712C9.12238 5.26072 6.98956 7.01108 5.489 9.25684C3.98843 11.5026 3.1875 14.1429 3.1875 16.8438C3.19226 20.4642 4.63256 23.935 7.19258 26.495C9.75259 29.055 13.2234 30.4953 16.8438 30.5001Z" fill="white"/>
                                 </svg>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="gallery__item gallery__item_5">
+                       <!-- <div class="gallery__item gallery__item_5">
                             <img src="./assets/image/gallery/5.png" alt="photo of house">
                             <div class="gallery__zoom">
                                 <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
@@ -510,13 +572,13 @@
                                     <path class="zoom" d="M24.0313 16.8438C24.0313 17.2251 23.8798 17.5907 23.6102 17.8603C23.3406 18.1299 22.975 18.2813 22.5938 18.2813H18.2813V22.5938C18.2813 22.9751 18.1298 23.3407 17.8602 23.6103C17.5906 23.8799 17.225 24.0313 16.8438 24.0313C16.4625 24.0313 16.0969 23.8799 15.8273 23.6103C15.5577 23.3407 15.4063 22.9751 15.4063 22.5938V18.2813H11.0938C10.7125 18.2813 10.3469 18.1299 10.0773 17.8603C9.8077 17.5907 9.65625 17.2251 9.65625 16.8438C9.65625 16.4626 9.8077 16.097 10.0773 15.8274C10.3469 15.5578 10.7125 15.4063 11.0938 15.4063H15.4063V11.0938C15.4063 10.7126 15.5577 10.347 15.8273 10.0774C16.0969 9.8078 16.4625 9.65635 16.8438 9.65635C17.225 9.65635 17.5906 9.8078 17.8602 10.0774C18.1298 10.347 18.2813 10.7126 18.2813 11.0938V15.4063H22.5938C22.975 15.4063 23.3406 15.5578 23.6102 15.8274C23.8798 16.097 24.0313 16.4626 24.0313 16.8438ZM37.2742 37.2743C36.9995 37.54 36.6322 37.6885 36.25 37.6885C35.8678 37.6885 35.5005 37.54 35.2258 37.2743L27.4633 29.4938C24.194 32.2398 19.9909 33.6177 15.7304 33.34C11.47 33.0624 7.48118 31.1506 4.59598 28.0036C1.71078 24.8565 0.151923 20.717 0.244533 16.4486C0.337144 12.1801 2.07407 8.11213 5.09305 5.09314C8.11204 2.07416 12.18 0.337235 16.4485 0.244625C20.7169 0.152015 24.8564 1.71087 28.0035 4.59607C31.1506 7.48128 33.0623 11.4701 33.3399 15.7305C33.6176 19.991 32.2397 24.1941 29.4938 27.4634L37.2742 35.2259C37.5442 35.4984 37.6956 35.8665 37.6956 36.2501C37.6956 36.6337 37.5442 37.0018 37.2742 37.2743ZM16.8438 30.5001C19.5447 30.5001 22.185 29.6992 24.4308 28.1986C26.6765 26.698 28.4269 24.5652 29.4605 22.0699C30.4941 19.5745 30.7645 16.8287 30.2376 14.1796C29.7107 11.5306 28.41 9.09728 26.5002 7.18742C24.5903 5.27756 22.157 3.97693 19.508 3.45C16.8589 2.92307 14.1131 3.19351 11.6177 4.22712C9.12238 5.26072 6.98956 7.01108 5.489 9.25684C3.98843 11.5026 3.1875 14.1429 3.1875 16.8438C3.19226 20.4642 4.63256 23.935 7.19258 26.495C9.75259 29.055 13.2234 30.4953 16.8438 30.5001Z" fill="white"/>
                                 </svg>
                             </div>
-                        </div>
+                        </div> -->
 
-                    </div>
+                    <!-- </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="calc">
+            <!-- <section class="calc">
                 <div class="container">
                     <div class="h-wrapper">
                         <div class="calc__header"><h2>Стоимость</h2></div>
@@ -654,7 +716,7 @@
                                         <option  value="">Проект разработан</option>
                                     </select>
                                 </div> -->
-                            </div>
+                            <!-- </div>
 
                             <div class="calc__progress"></div>
 
@@ -672,9 +734,9 @@
                 </div>
 
 
-            </section>
+            </section> -->
 
-            <section class="contacts">
+           <!-- <section class="contacts">
                 <div class="container">
                     <div class="h-wrapper">
                         <div class="contacts__header"><h2>Контакты</h2></div>
@@ -725,11 +787,11 @@
                     </div>
                 </div>
 
-            </section>
+            </section> -->
 
         </main>
 
-        <footer>
+        <!-- <footer>
             <div class="container">
                 <div class="footer">
                     <div class="footer__navigation">
@@ -798,7 +860,7 @@
                     </div>
                 </div>    
             </div>
-        </footer>
+        </footer> -->
         
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

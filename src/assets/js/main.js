@@ -38,5 +38,34 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       }
   });
+
+		
+	const items = document.querySelectorAll('.steps__item');
+
+		items.forEach(item => {
+
+			item.addEventListener('mouseenter',  function () {
+				this.classList.toggle('active');
+				if(window.screen.width <= 576) {
+					const heightChildElem = window.getComputedStyle(item.querySelector('.steps__hover-item')).height;
+					this.style.alignItems = 'flex-start';
+
+          this.style.height = +heightChildElem.slice(0, -2) + 70 + 'px';
+          this.style.transform = 'translateY(-10px)';
+          this.style.transition = 'transform .4s';
+				}
+			});
+
+			item.addEventListener('mouseleave', function () {
+
+				this.classList.toggle('active');
+				if(window.screen.width <= 576) {
+					this.style.height = '50px';
+					this.style.alignItems = 'center';
+          this.style.transform = 'translateY(0px)';
+          this.style.transition = 'transform .4s';
+				}
+			});
+	});
   
 });

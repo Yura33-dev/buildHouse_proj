@@ -2,6 +2,11 @@
     background-color: #E1EAF7;
     padding-bottom: 160px;
 
+    .a-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
     .h-wrapper {
         display: flex;
         justify-content: flex-start;
@@ -16,7 +21,7 @@
             font-size: 34px;
             line-height: 24px;
             letter-spacing: 0.5px;
-            color: #000000;
+            color: #0E1117;
             text-transform: uppercase;
         }
     }
@@ -26,8 +31,20 @@
             font-weight: 700;
             font-size: 18px;
             line-height: 22px;
-            color: #000000;
+            color: #0E1117;
+            text-transform: uppercase;
+
         }
+    }
+    &__link-more {
+      
+        font-size: 16px;
+        line-height: 22px;
+        color: #0E1117;
+        text-decoration: none;
+        border-bottom: 1px solid #0E1117;
+        padding-bottom: 3px;
+        
     }
     &__container {
         margin-top: 57px;

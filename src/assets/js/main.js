@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		
 const items = document.querySelectorAll('.steps__main');
 
-	if(window.screen.width > 576) {
+	if(window.screen.width > 768) {
 		items.forEach(item => {
 
 			item.addEventListener('mouseenter',  function () {
@@ -61,18 +61,27 @@ const items = document.querySelectorAll('.steps__main');
 
 		items.forEach((item, i) => {
 
-			item.addEventListener('click',  function () {
-
-				if(this.parentElement.classList.contains('active')) {
-					this.parentElement.classList.remove('active');
-					try {
-						this.parentElement.nextElementSibling.style.marginTop = '0';
-					} catch(e) {}
+			item.addEventListener('touchend',  function () {
+				if(this.parentElement.getAttribute('data-order') !== '6') {
 					
-				}
-				else {
-					if(this.parentElement.nextElementSibling) {
 
+					if(this.parentElement.classList.contains('active')) {
+						this.parentElement.classList.remove('active');
+						try {
+							this.parentElement.nextElementSibling.style.marginTop = '0';
+						} catch(e) {}
+						
+					}
+					else {
+
+						items.forEach((inner) => {
+							inner.parentElement.classList.remove('active');
+							try {
+								inner.parentElement.nextElementSibling.style.marginTop = '0';
+							} catch(e) {}
+							
+						});
+						
 						const heightHoverElem = window.getComputedStyle(this.nextElementSibling).height;
 						try {
 							if(i === 4) {
@@ -86,11 +95,29 @@ const items = document.querySelectorAll('.steps__main');
 						this.parentElement.classList.add('active');
 
 					}
+				}
+				else {
+					if(this.parentElement.classList.contains('active')) {
+
+						this.parentElement.closest('.steps').style.transition = 'padding-bottom .3s';
+						this.parentElement.closest('.steps').style.paddingBottom = '84px';
+						this.parentElement.classList.remove('active');
+					} 
 					else {
 
+						items.forEach((inner) => {
+							inner.parentElement.classList.remove('active');
+							try {
+								inner.parentElement.nextElementSibling.style.marginTop = '0';
+							} catch(e) {}
+							
+						});
+						
+						const heightHoverElem = window.getComputedStyle(this.nextElementSibling).height;
+						this.parentElement.closest('.steps').style.paddingBottom = +heightHoverElem.slice(0,-2) + 84 + 'px';
 						this.parentElement.classList.add('active');
 					}
-
+					
 				}
 			});
 		});

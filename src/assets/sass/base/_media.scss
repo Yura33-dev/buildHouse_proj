@@ -109,27 +109,37 @@
         }
         &__hover-item {
             &_1 {
+                width: 350px;
                 left: 107px;
+                bottom: -101px;
+                // display: none;
             }
             &_2 {
-                left: 92px;
+                width: 340px;
+                left: 94px;
             }
             &_3 {
-                left: 107px;
+                width: 350px;
+                left: 109px;
             }
             &_4 {
+                width: 340px;
                 left: 32px;
+                bottom: -194px;
             }
             &_5 {
+                width: 350px;
                 left: 109px;
             }
             &_6 {
+                width: 340px;
                 left: 0px;
                 bottom: -230px;
             }
         }
         &__hover-text {
             &_1 {
+                width: 265px;
                 &::before {
                     left: 67px;
                 }
@@ -140,21 +150,25 @@
                 }
             }
             &_3 {
+                width: 265px;
                 &::before {
                     left: 63px;
                 }
             }
             &_4 {
+                width: 245px;
                 &::before {
                     left: 97px;
                 }
             }
             &_5 {
+                width: 260px;
                 &::before {
                     left: 107px;
                 }
             }
             &_6 {
+                width: 250px;
                 &::before {
                     left: 86px;
                 }
@@ -277,7 +291,7 @@
         &__hover-item {
             left: 0;
             &_6 {
-                bottom: -208px;
+                bottom: -228px;
             }
         }
     }
@@ -364,12 +378,28 @@
         }
         &__hover-item {
             left: 0;
-            bottom: -102px;
-            width: 100%;
+            width: 535px;
+            &_1 {
+                bottom: -80px;
+            }
+            &_2 {
+                bottom: -108px;
+            }
+            &_3 {
+                bottom: -210px;
+            }
+            &_4 {
+                bottom: -150px;
+            }
+            &_5 {
+                bottom: -333px;
+            }
+            &_6 {
+                bottom: -160px;
+            }
         }
         &__hover-text {
-            // width: 450px;
-            width: 100%;
+            width: 450px;
             &::before {
                 left: 66px;
             }
@@ -465,6 +495,10 @@
             font-size: 16px;
         }
         &__hover-item {
+            width: 307px;
+            &_1 {
+                bottom: -102px;
+            }
             &_2 {
                 bottom: -148px;
             }
@@ -472,16 +506,17 @@
                 bottom: -300px;
             }
             &_4 {
-                bottom: -190px;
+                bottom: -195px;
             }
             &_5 {
-                bottom: -480px;
+                bottom: -450px;
             }
             &_6 {
                 bottom: -230px;
             }
         }
         &__hover-text {
+            width: 225px;
             &_1 {
                 &::before {
                     left: 58px;

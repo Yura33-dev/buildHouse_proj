@@ -364,7 +364,7 @@
         }
         &__hover-item {
             left: 0;
-            bottom: 10px;
+            bottom: -102px;
             width: 100%;
         }
         &__hover-text {
@@ -463,6 +463,23 @@
         }
         &__title {
             font-size: 16px;
+        }
+        &__hover-item {
+            &_2 {
+                bottom: -148px;
+            }
+            &_3 {
+                bottom: -300px;
+            }
+            &_4 {
+                bottom: -190px;
+            }
+            &_5 {
+                bottom: -480px;
+            }
+            &_6 {
+                bottom: -230px;
+            }
         }
         &__hover-text {
             &_1 {

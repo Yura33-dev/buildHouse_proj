@@ -39,8 +39,11 @@ window.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+
+
+
 		
-	const items = document.querySelectorAll('.steps__main');
+const items = document.querySelectorAll('.steps__main');
 
 	if(window.screen.width > 576) {
 		items.forEach(item => {
@@ -53,27 +56,41 @@ window.addEventListener('DOMContentLoaded', () => {
 				this.parentNode.classList.toggle('active');
 			});
 		});
-	} else {
-		items.forEach(item => {
+	} 
+	else {
+
+		items.forEach((item, i) => {
 
 			item.addEventListener('click',  function () {
 
-				if(this.parentNode.classList.contains('active')) {
+				if(this.parentElement.classList.contains('active')) {
+					this.parentElement.classList.remove('active');
+					try {
+						this.parentElement.nextElementSibling.style.marginTop = '0';
+					} catch(e) {}
+					
+				}
+				else {
+					if(this.parentElement.nextElementSibling) {
 
-					this.parentNode.classList.toggle('active');
-					this.parentNode.style.height = '50px';
-					this.parentNode.style.alignItems = 'center';
-					this.parentNode.style.transform = 'translateY(0px)';
-					this.parentNode.style.transition = 'transform .4s';
-				} else {
-					this.parentNode.classList.toggle('active');
-					const heightChildElem = window.getComputedStyle(item.nextElementSibling).height;
+						const heightHoverElem = window.getComputedStyle(this.nextElementSibling).height;
+						try {
+							if(i === 4) {
+								this.parentElement.nextElementSibling.style.transition = 'margin-top .5s';
+							} else {
+								this.parentElement.nextElementSibling.style.transition = 'margin-top .2s';
+							}
+							this.parentElement.nextElementSibling.style.marginTop = +heightHoverElem.slice(0, -2) + 10 + 'px';
+						} catch (e){}
+						
+						this.parentElement.classList.add('active');
 
-					this.parentNode.style.alignItems = 'flex-start';
+					}
+					else {
 
-					this.parentNode.style.height = +heightChildElem.slice(0, -2) + 70 + 'px';
-					this.parentNode.style.transform = 'translateY(-10px)';
-					this.parentNode.style.transition = 'transform .4s';
+						this.parentElement.classList.add('active');
+					}
+
 				}
 			});
 		});

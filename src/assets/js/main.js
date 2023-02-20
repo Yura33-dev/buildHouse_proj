@@ -59,6 +59,7 @@ const items = document.querySelectorAll('.steps__main');
 	} 
 	else {
 
+		document.querySelector('.steps__item_decorize').remove();
 		items.forEach((item, i) => {
 
 			item.addEventListener('touchend',  function () {
@@ -68,7 +69,8 @@ const items = document.querySelectorAll('.steps__main');
 					if(this.parentElement.classList.contains('active')) {
 						this.parentElement.classList.remove('active');
 						try {
-							this.parentElement.nextElementSibling.style.marginTop = '0';
+							this.parentElement.nextElementSibling.style.marginTop = '0px';
+							// this.parentElement.nextElementSibling.classList.add('mt_20');
 						} catch(e) {}
 						
 					}
@@ -77,12 +79,12 @@ const items = document.querySelectorAll('.steps__main');
 						items.forEach((inner) => {
 							inner.parentElement.classList.remove('active');
 							try {
-								inner.parentElement.nextElementSibling.style.marginTop = '0';
+								inner.parentElement.nextElementSibling.style.marginTop = '0px';
 							} catch(e) {}
 							
 						});
 						
-						const heightHoverElem = window.getComputedStyle(this.nextElementSibling).height;
+						const heightHoverElem = window.getComputedStyle(this.lastElementChild).height;
 						try {
 							if(i === 4) {
 								this.parentElement.nextElementSibling.style.transition = 'margin-top .5s';
@@ -108,12 +110,12 @@ const items = document.querySelectorAll('.steps__main');
 						items.forEach((inner) => {
 							inner.parentElement.classList.remove('active');
 							try {
-								inner.parentElement.nextElementSibling.style.marginTop = '0';
+								inner.parentElement.nextElementSibling.style.marginTop = '0px';
 							} catch(e) {}
 							
 						});
 						
-						const heightHoverElem = window.getComputedStyle(this.nextElementSibling).height;
+						const heightHoverElem = window.getComputedStyle(this.lastElementChild).height;
 						this.parentElement.closest('.steps').style.paddingBottom = +heightHoverElem.slice(0,-2) + 84 + 'px';
 						this.parentElement.classList.add('active');
 					}

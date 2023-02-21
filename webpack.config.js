@@ -73,7 +73,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff2? || ttf)$/i,
+        test: /\.(woff2? || ttf || eot)$/i,
         type: "asset/resource"
       },
       {

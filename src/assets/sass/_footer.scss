@@ -6,30 +6,25 @@ footer {
         justify-content: space-between;
         align-items: flex-start;
         &__navigation {
+            width: 25%;
             margin-top: 117px;
         }
     
         &__nav {
-            width: 200px;
+            width: 100%;
             margin-top: 44px;
             ul {
+                width: 100%;
                 margin: 0;
                 padding: 0;
                 list-style-type: none;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                row-gap: 14px;
             }
             li {
-                display: inline-block;
-                &:nth-child(1) {
-                    padding-right: 73px;
-                }
-                &:nth-child(3) {
-                    margin-top: 12px;
-                    padding-right: 34px;
-                }
-                &:nth-child(5) {
-                    margin-top: 12px;
-                    padding-right: 79px;
-                }
+                width: 50%;
             }
             a {
                 font-weight: 500;
@@ -46,7 +41,7 @@ footer {
             }
         }
         &__form {
-            width: 414px;
+            width: 40%;
             h2 {
                 margin: 0;
                 font-weight: 600;
@@ -62,7 +57,8 @@ footer {
         &__input {
             position: relative;
             input {
-                width: 396px;
+                box-sizing: border-box;
+                width: 100%;
                 height: 46px;
                 padding: 0;
                 border: none;
@@ -92,6 +88,8 @@ footer {
             text-align: center;
         }
         &__info {
+            width: 25%;
+
             margin-top: 117px;
             display: flex;
             flex-direction: column;

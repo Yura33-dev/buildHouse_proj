@@ -5,7 +5,6 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        // gap: 110px;
     }
     &__header {
         margin-right: 110px;
@@ -46,8 +45,6 @@
         } 
         &_decorize {
             margin: 0 auto;
-            // margin-top: 33px;
-            // margin-bottom: 33px;
             width: 70%;
             height: 132px;
             border-left: 2px solid #B6C9E3;
@@ -125,9 +122,21 @@
         border-right: 5px solid transparent;
         border-top: 5px solid #000;
         transition: transform .4s;
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            position: absolute;
+            top: 25px;
+            transform: rotate(45deg);
+            left: -3px;
+            opacity: 0;
+            // transition: opacity .1s;
+        }
     }
     &__main {
-        // min-height: 50px;
         height: 68px;
         position: relative;
         display: flex;
@@ -140,58 +149,28 @@
     }
     &__hover-item {
         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
         visibility: hidden;
         opacity: 0;
         width: 100%;
         z-index: 2;
         margin-top: 20px;
-        margin-left: -67px;
-        justify-content: flex-start;
-        align-items: flex-start;
+        margin-left: -74px;
         background-color: #fff;
 
         padding: 22px 22px;
 
         transition: opacity .3s;
         box-sizing: border-box;
-        div {
+        position: relative;
+        
+        &-inner {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-        }
-
-        &_1 {
-            // display: none;
-        
-        }
-        &_2 {
-            // display: none;
-           
-        }
-        &_3 {
-            // display: none;
-            flex-direction: column;
-        
-        }
-        &_4 {
-            // width: 277px;
-            flex-direction: column;
-            // display: none;
-           
-            // bottom: -218px;
-        }
-        &_5 {
-            // width: 344px;
-            flex-direction: column;
-            // display: none;
-           
-            // bottom: -422px;
-        }
-        &_6 {
-            // width: 301px;
-            flex-direction: column;
-            // display: none;
-            // bottom: -228px;
         }
     }
 
@@ -204,78 +183,14 @@
 
         margin-left: 16px;
         width: 100%;
-        &::before
-        {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background-color: #fff;
-            position: absolute;
-            top: -26px;
-            transform: rotate(45deg);
-            left: 0px;
-        }
-        &_1 {
-            // width: 200px;
-            
-            // &::before {
-            //     left: 0px;
-            // }
-        }
-        &_2 {
-            // width: 258px;
-            // &::before {
-            //     left: -2px;
-            // }
-            // width: 281px;
-        }
-        &_3 {
-            // width: 234px;
-            // &::before {
-            //     left: -7px;
-            // }
-            margin-bottom: 10px;
-            &_withoutBefore {
-                &::before {
-                   content: none;
-                }
-            }
-        }
-        &_4 {
-            // width: 181px;
-            margin-bottom: 10px;
+        
+        &_withoutBefore {
             &::before {
-                left: 28px;
-            }
-            &_withoutBefore {
-                &::before {
-                   content: none;
-                }
+               content: none;
             }
         }
-        &_5 {
-            // width: 260px;
+        &_3,&_4,&_5,&_6  {
             margin-bottom: 10px;
-            &::before {
-                left: 39px;
-            }
-            &_withoutBefore {
-                &::before {
-                   content: none;
-                }
-            }
-        }
-        &_6 {
-            // width: 220px;
-            margin-bottom: 10px;
-            &::before {
-                left: 20px;
-            }
-            &_withoutBefore {
-                &::before {
-                   content: none;
-                }
-            }
         }
     }
     &__hover-img {
@@ -297,10 +212,15 @@
             visibility: visible;
             opacity: 1;
         }
-        .steps__black-rec {
+        .steps__black-rec :not(:before) {
             transition: transform .4s;
             transform: rotateZ(180deg) translateY(2px);
-            transition: all .4s;
+        }
+        .steps__black-rec {
+            &::before {
+                opacity: 1;
+                transition: opacity .4s;
+            }
         }
     }
     .non-active {

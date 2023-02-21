@@ -62,7 +62,7 @@ const items = document.querySelectorAll('.steps__main');
 		document.querySelector('.steps__item_decorize').remove();
 		items.forEach((item, i) => {
 
-			item.addEventListener('touchend',  function () {
+			item.addEventListener('click',  function () {
 				if(this.parentElement.getAttribute('data-order') !== '6') {
 					
 

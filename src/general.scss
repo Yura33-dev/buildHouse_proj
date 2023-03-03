@@ -1,0 +1,18 @@
+//important components
+@import './pug/sass/normalize.scss';
+@import './pug/sass/fonts';
+
+//scss components
+@import './pug/components/styles/btns';
+
+@import './pug/components/styles/nav-bar';
+@import './pug/components/styles/promo-blog';
+@import './pug/components/styles/footer';
+
+// responsive pages and components
+@import './pug/components/styles/media-components';
+
+.container {
+    margin: 0 auto;
+    position: relative;
+}

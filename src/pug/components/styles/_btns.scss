@@ -99,4 +99,22 @@
 		color: #FFFFFF;
 		margin-top: 50px;
 	}
+	&_simple {
+		background: none;
+		border-bottom: 1px solid #0E1117;
+		padding: 0;
+		padding-bottom: 1px;
+		margin-top: 14px;
+
+		font-size: 16px;
+        line-height: 22px;
+        color: #0E1117;
+	}
+	&_blog {
+		margin-top: 24px;
+		opacity: 0;
+		position: absolute;
+		bottom: 38px;
+		left: 20;
+	}
 }

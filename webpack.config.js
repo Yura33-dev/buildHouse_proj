@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const globule = require("globule");
 
 
 const mode = process.env.NODE_ENV || 'development';
@@ -10,25 +11,44 @@ const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
+const pugPath = globule.find(['src/pug/pages/index/index.pug'],
+                             ['src/pug/pages/services/services.pug']);
+
 module.exports = {
   mode,
   target,
-  devtool,
+  devtool,  
 
-  entry: './src/index.js',
+  entry: {
+    index: './src/pug/pages/index/index.js',
+    services: './src/pug/pages/services/services.js'
+    
+  },
+
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: devMode ? 'bundle.js' : 'bundle.[contenthash].js',
+    filename: devMode ? 'assets/js/[name].js' : 'assets/js/[name].[contenthash].js',
     clean: true,
     assetModuleFilename: pathData => {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return devMode ? `${filepath}/[name][ext]` : `${filepath}/[name].[hash][ext]`;
     },
+    publicPath: './'
   },
+
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'index.html')
+    // new HtmlWebpackPlugin({
+    //   template: './src/pug/pages/index.pug',
+    //   filename: 'index.html'
+    // }),
+    ...pugPath.map(pathOne => {
+      return new HtmlWebpackPlugin({
+        template: pathOne,
+        filename: `${pathOne.split(/\/|.pug/).splice(-2, 1)}.html`,
+        chunks: [`${pathOne.split(/\/|.pug/).splice(-2, 1)}`]
+      });
     }),
+
     new MiniCssExtractPlugin({
       filename: 'styles.[contenthash].css',
     }),
@@ -41,9 +61,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/i,
-        loader: "html-loader",
+        test: /\.pug$/i,
+        loader: "pug-loader",
+        exclude: /(node_modules | bower_components)/,
       },
+      // {
+      //   test: /\.html$/i,
+      //   loader: "html-loader",
+      // },
       {
         test: /\.(c|sa|sc)ss$/i,
         use: [

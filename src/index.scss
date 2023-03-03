@@ -1,5 +1,5 @@
-@import './assets/sass/libs/normalize.scss';
-@import './assets/sass/fonts.scss';
+@import './assets/sass/libs/normalize';
+@import './assets/sass/fonts';
 
 @import './assets/sass/btns';
 
@@ -9,6 +9,7 @@
 @import './assets/sass/benefits';
 @import './assets/sass/steps';
 @import './assets/sass/gallery';
+@import './assets/sass/blog';
 @import './assets/sass/calc';
 @import './assets/sass/contacts';
 @import './assets/sass/footer';
@@ -16,25 +17,8 @@
 
 
 @import './assets/sass/base/media';
-html {
-	font-family: 'Montserrat', sans-serif;
-    // box-sizing:border-box;
-}
 
 .container {
     margin: 0 auto;
     position: relative;
-}
-
-.show-flex {
-    display: flex;
-    transition: all .4s;
-}
-
-.show-block {
-    display: block;
-}
-
-.hide {
-    display: none;
 }

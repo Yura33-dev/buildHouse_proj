@@ -22,7 +22,6 @@ header {
         }
         &__items {
             padding: 20px 0;
-            // padding: 20px 0 40px 0;
         }
         &__logo {
             margin-right: 50px;
@@ -44,7 +43,6 @@ header {
         .arrow-right {
             position: absolute;
             top: 50%;
-            // transform: translateY(-50%);
             right: 15px;
 
             width: 0;
@@ -67,11 +65,14 @@ header {
             line-height: 24px;
             letter-spacing: 0.5px;
             color: #0E1117;
-            gap: 32px;
 
         }
         &__main-li {
             position: relative;
+            margin-right: 32px;
+            &:last-child {
+                margin-right: 0;
+            }
             &:nth-child(2) {
                 padding-right: 20px;
             }
@@ -185,11 +186,11 @@ header {
             font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 52px;
         }
         &__phone {
             display: flex;
             align-items: center;
+            margin-right: 52px;
             a {
                 color: #0E1117;
                 text-decoration: none;

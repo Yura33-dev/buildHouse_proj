@@ -7,7 +7,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 60px;
     }
     &__header {
         h2 {
@@ -23,14 +22,6 @@
     }
     &__description {
         max-width: 400px;
-        h3 {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 22px;
-            text-transform: uppercase;
-            color: #0E1117;
-            margin: 0 0 24px 0;
-            }
         p {
             font-weight: 500;
             font-size: 16px;
@@ -46,5 +37,18 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    &__link {
+        color:#0E1117;
+        text-decoration: none; 
+        display: inline-block;
+        border-bottom: 1px solid #0E1117;
+		padding: 0;
+		padding-bottom: 1px;
+		margin-top: 24px;
+
+        font-weight: 600;
+		font-size: 16px;
+        line-height: 22px;
     }
 }

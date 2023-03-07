@@ -1,0 +1,36 @@
+extends ./../base
+
+block metahead
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title EnergyHouse - О нас
+block content
+    include ./../../components/nav-bar/_nav-bar
+    main
+        section.about
+            .about__bg-image 
+                img(src=require("./../../../assets/image/about/about-header.png"), alt="photo of houses")
+            .container
+                .about__wrapper
+                    .about__header
+                        h2 О нас
+                    .about__description
+                        h3 Построим дом вашей мечты
+                        p
+                            | «Energy World Ukraine» — строительная компания, специализирующаяся на строительных, проектных и архитектурных услугах.
+                        h3 Надежность - наше второе имя
+                        p
+                            | Предлагаем комплексное решение для строительства частных домов с нуля. Наша команда опытных профессионалов стремится предоставлять качественные услуги и творческие решения. 
+                            br
+                            br
+                            | Каждый проект уникален и требует особого подхода, поэтому мы стремимся создать комфортную среду для каждого клиента.
+                        h3 Без сюрпризов
+                        p 
+                            | Благодаря нашим знаниям и опыту, можем гарантировать, что ваш проект будет завершен вовремя и в рамках бюджета. Будем рады помочь создать дом вашей мечты!
+                    .about__photo
+        include ./../../components/benefits/_benefits
+        include ./../../components/promo-services/_promo-services
+        include ./../../components/promo-blog/_promo-blog
+        include ./../../components/footer/_footer

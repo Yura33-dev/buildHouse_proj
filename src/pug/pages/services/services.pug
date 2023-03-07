@@ -1,9 +1,71 @@
-doctype html
-html(lang="ru")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Услуги - EnergyHouse
-    body
-     include ./../../components/_nav-bar
+extends ./../base
+
+block metahead
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title EnergyHouse - Услуги
+block content
+    include ./../../components/nav-bar/_nav-bar
+    main
+        section.services
+            .services__bg-image
+                img(src=require("./../../../assets/image/services/header.png"), alt="photo of houses")
+            .container
+                .h-wrapper
+                    .services__header
+                        h2 Услуги
+                    .services__describe
+                        p
+                            | Предоставляем комплексные решения для строительных объектов любого масштаба и сложности. От строительства домов под ключ до коммерческих объектов.
+                .services__content
+
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/wooden.png') alt='first service')
+                            .services__item-header
+                                h3 Деревянные дома
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/halfhouse.png') alt='second service')
+                            .services__item-header
+                                h3 Беседки
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/a-house.png') alt='third service')
+                            .services__item-header
+                                h3 А-дома
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Модульные дома
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Каркасно- <br>монолитные дома
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Каркасные дома
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Торговые центры
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Мобильные офисы
+                    .services__item
+                        a(href="#") 
+                            img(src=require('./../../../assets/image/services/module.png') alt='fourth service')
+                            .services__item-header
+                                h3 Железобетонные <br> конструкции
+        //- include ./../../components/promo-gallery/_promo-gallery
+        //- include ./../../components/promo-blog/_promo-blog
+        include ./../../components/footer/_footer

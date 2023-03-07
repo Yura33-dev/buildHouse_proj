@@ -1,16 +1,17 @@
 //important components
-@import './pug/sass/normalize.scss';
-@import './pug/sass/fonts';
+@import './pug/components/Z-libs/normalize.scss';
+@import './pug/components/Z-libs/fonts';
 
-//scss components
-@import './pug/components/styles/btns';
+//scss components for all pages
+@import './pug/components/buttons/btns';
 
-@import './pug/components/styles/nav-bar';
-@import './pug/components/styles/promo-blog';
-@import './pug/components/styles/footer';
+@import './pug/components/nav-bar/nav-bar';
+@import './pug/components/promo-gallery/promo-gallery';
+@import './pug/components/promo-blog/promo-blog';
+@import './pug/components/footer/footer';
 
-// responsive pages and components
-@import './pug/components/styles/media-components';
+// responsive components
+// @import './pug/components/Z-media-requests/media-components';
 
 .container {
     margin: 0 auto;

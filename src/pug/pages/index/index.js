@@ -1,6 +1,8 @@
 import './../../../main.js';
 import './index.scss';
 
+import './../../components/swiper/swiper-bundle.min.scss';
+import Swiper from './../../components/swiper/swiper-bundle.min.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -38,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		}	
 		});
-		//------------
+		//------------hover item for steps section
 		const stepsSection = (trigger) => {
 			const items = document.querySelectorAll(trigger);
 		

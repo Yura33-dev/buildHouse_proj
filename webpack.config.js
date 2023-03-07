@@ -12,7 +12,8 @@ const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
 const pugPath = globule.find(['src/pug/pages/index/index.pug'],
-                             ['src/pug/pages/services/services.pug']);
+                             ['src/pug/pages/services/services.pug'],
+                             ['src/pug/pages/about/about.pug']);
 
 module.exports = {
   mode,
@@ -21,8 +22,8 @@ module.exports = {
 
   entry: {
     index: './src/pug/pages/index/index.js',
-    services: './src/pug/pages/services/services.js'
-    
+    services: './src/pug/pages/services/services.js',
+    about: './src/pug/pages/about/about.js'
   },
 
   output: {
@@ -33,7 +34,7 @@ module.exports = {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return devMode ? `${filepath}/[name][ext]` : `${filepath}/[name].[hash][ext]`;
     },
-    publicPath: './'
+    //publicPath: './'
   },
 
   plugins: [
@@ -50,7 +51,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: 'styles.[contenthash].css',
+      filename: '[name].styles.[contenthash].css',
     }),
     // new CopyPlugin({
     //   patterns: [
@@ -66,9 +67,14 @@ module.exports = {
         exclude: /(node_modules | bower_components)/,
       },
       // {
-      //   test: /\.html$/i,
-      //   loader: "html-loader",
+      //   test: /\.pug$/,
+      //   loader: '@webdiscus/pug-loader'
       // },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        exclude: /(node_modules | bower_components)/,
+      },
       {
         test: /\.(c|sa|sc)ss$/i,
         use: [
@@ -115,7 +121,7 @@ module.exports = {
                 enabled: false,
               },
               pngquant: {
-                quality: [0.65, 0.90],
+                quality: [0.5, 0.50],
                 speed: 4
               },
               gifsicle: {
@@ -123,12 +129,15 @@ module.exports = {
               },
               // the webp option will enable WEBP
               webp: {
-                quality: 75
+                quality: 50
               }
             }
           }
         ],
         type: "asset/resource",
+        // generator: {
+        //   filename: './assets/pictures/[name][hash][ext][query]'
+        // }
       },
     ],
   },

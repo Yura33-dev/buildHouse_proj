@@ -1,2 +1,2 @@
 import './services.scss';
-import '../../../main.js';
+import './../../../main.js';

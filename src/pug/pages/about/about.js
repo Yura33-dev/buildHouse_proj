@@ -4,8 +4,9 @@ import './about.scss';
 import './../../components/swiper/swiper-bundle.min.scss';
 import Swiper from './../../components/swiper/swiper-bundle.min.js';
 
+import './../../components/promo-services/_promo-services.js';
+
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('Hello from About page!');
 
 	//  Swiper
 	const swiper = new Swiper('.swiper', {

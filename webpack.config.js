@@ -13,7 +13,9 @@ const devtool = devMode ? 'source-map' : undefined;
 
 const pugPath = globule.find(['src/pug/pages/index/index.pug'],
                              ['src/pug/pages/services/services.pug'],
-                             ['src/pug/pages/about/about.pug']);
+                             ['src/pug/pages/about/about.pug'],
+                             ['src/pug/pages/services/wooden/wooden.pug'],
+                             ['src/pug/pages/gallery/gallery.pug']);
 
 module.exports = {
   mode,
@@ -23,7 +25,9 @@ module.exports = {
   entry: {
     index: './src/pug/pages/index/index.js',
     services: './src/pug/pages/services/services.js',
-    about: './src/pug/pages/about/about.js'
+    about: './src/pug/pages/about/about.js',
+    wooden: './src/pug/pages/services/wooden/wooden.js',
+    gallery: './src/pug/pages/gallery/gallery.js'
   },
 
   output: {
@@ -121,7 +125,7 @@ module.exports = {
                 enabled: false,
               },
               pngquant: {
-                quality: [0.5, 0.50],
+                quality: [0.7, 0.90],
                 speed: 4
               },
               gifsicle: {
@@ -129,7 +133,7 @@ module.exports = {
               },
               // the webp option will enable WEBP
               webp: {
-                quality: 50
+                quality: 70
               }
             }
           }

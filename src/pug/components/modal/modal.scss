@@ -1,0 +1,124 @@
+.modal__grateful {
+    max-width: 573px;
+    height: 257px;
+    background: #F6F8FB;
+    margin: 25% auto;
+    position: relative;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    &:before {
+        content: '';
+        width: 2px;
+        height: 18px;
+        background: #686D78;
+
+        position: absolute;
+        top: 1px;
+        right: 9px;
+
+        transform: rotate(45deg);
+    }
+    &:after {
+        content: '';
+        width: 2px;
+        height: 18px;
+        background: #686D78;
+
+        position: absolute;
+        top: 1px;
+        right: 9px;
+
+        transform: rotate(-45deg);
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal__wrapper {
+    box-sizing: border-box;
+    width: 483px;
+    height: 167px;
+    background: #fff;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 26px 0px;
+}
+
+.modal__main-message {
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #0E1117;
+}
+
+.modal__message {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #686D78;
+    margin-top: 5px;
+}
+
+//
+
+@media (min-width: 1400px) {
+    
+}
+
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+    .modal__grateful {
+        max-width: 536px;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal__grateful {
+        max-width: 315px;
+    }
+    .modal__wrapper {
+        padding: 0;
+        width: 317px;
+        height: 172px;
+    }
+    .modal__img {
+        margin-top: 15px;
+    }
+    .modal__close {
+        &::before, &::after {
+            height: 28px;
+            top: -6px;
+        }
+    }
+}

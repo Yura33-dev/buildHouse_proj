@@ -6,8 +6,6 @@ import Swiper from './../../components/swiper/swiper-bundle.min.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-	console.log('Hello from Index page!');
-
 	//  Swiper
 	const swiper = new Swiper('.swiper', {
 		// Optional parameters

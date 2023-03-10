@@ -310,13 +310,11 @@ header {
 
     header {
         background-color: #ffffff;
-        .container {
-            .header {
-                justify-content: space-around;
-                &__language {
-                    display: none;
-                }   
-            }
+        .header {
+            justify-content: space-around;
+            &__language {
+                display: none;
+            }   
         }
     }
 }

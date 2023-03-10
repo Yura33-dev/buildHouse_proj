@@ -4,10 +4,9 @@
 
 //scss components for all pages
 @import './pug/components/buttons/btns';
+@import './pug/components/modal/modal.scss';
 
 @import './pug/components/nav-bar/nav-bar';
-@import './pug/components/promo-gallery/promo-gallery';
-@import './pug/components/promo-blog/promo-blog';
 @import './pug/components/footer/footer';
 
 // responsive components
@@ -16,4 +15,25 @@
 .container {
     margin: 0 auto;
     position: relative;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 16;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.7);
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1 }
+    100% { opacity: 0; }
 }

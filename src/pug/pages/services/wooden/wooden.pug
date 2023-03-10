@@ -1,0 +1,44 @@
+extends ./../../base
+
+block metahead
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title EnergyHouse - Деревянные дома
+block content
+    include ./../../../components/nav-bar/_nav-bar
+    main
+        section.page
+            .page__bg-image
+                img(src=require("./../../../../assets/image/services/services-header.png"), alt="photo of houses")
+            .container
+                .page__path
+                    a.page__link(href="./index.html") Главная  > 
+                    a.page__link(href="./services.html") Услуги  > 
+                    p  Деревянные дома
+                .page__wrapper
+                    .page__left
+                        h1.page__header Деревянные дома
+
+                        h2.page__subheader Дерево - отличный стройматериал 
+                        .page__description
+                            p 
+                                | При выборе материала для строительства частного дома под ключ, многие выбирают именно дерево. Это связано с тем, что оно имеет ряд преимуществ, которые делают его идеальным для строительства дома. Дерево - натуральный материал, обладающий теплыми и приятными эстетическими свойствами. Дерево создает уютную атмосферу и придает дому естественную красоту.
+
+                        h2.page__subheader Преимущества деревянных материалов
+                        .page__description
+                            p 
+                                | Одно из основных преимуществ использования дерева при строительстве частного дома - это его надежность и прочность. Дерево обладает высокой прочностью на изгиб и сжатие, что делает его идеальным материалом для создания каркаса дома. Кроме того, дерево является отличным теплоизоляционным материалом, что помогает сохранять тепло в доме и снижает затраты на отопление.
+
+                        h2.page__subheader Экологичность дерева
+                        .page__description
+                            p 
+                                | Еще одно преимущество дерева - его экологичность. Дерево - это натуральный и возобновляемый материал, который не загрязняет окружающую среду. Кроме того, деревянный дом не выделяет токсичных веществ и не содержит вредных для здоровья веществ, что делает его безопасным для жизни и здоровья людей. <br><br> Однако, как и любой материал, дерево имеет свои недостатки. Например, оно может подвергаться воздействию грибков, насекомых и плесени. Однако, правильная обработка и защита дерева позволяет устранить эти проблемы и сделать его прочным и долговечным материалом для строительства дома.
+                    .page__right 
+                        img(src=require("./../../../../assets/image/services/sub-wooden/wooden.png"), alt="picture of wooden construction")
+                        //- img(src="https://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg", alt="asas")
+        include ./../../../components/promo-services/_promo-services
+            //- include ./../../../components/promo-gallery/_promo-gallery
+        include ./../../../components/promo-blog/_promo-blog
+    include ./../../../components/footer/_footer

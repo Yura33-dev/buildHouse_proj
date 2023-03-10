@@ -1,4 +1,6 @@
-@import './../../components/benefits/benefits';
+@import './../../components/benefits/benefits.scss';
+@import './../../components/promo-gallery/promo-gallery.scss';
+@import './../../components/promo-blog/promo-blog.scss';
 
 .benefits__header h2, .promo-blog__header h2, .promo-gallery__header h2 {
     font-size: 34px;
@@ -953,6 +955,10 @@ header {
         width: 95%;
     }
 
+    .benefits__header h2, .promo-blog__header h2, .promo-gallery__header h2 {
+        font-size: 20px;
+    }
+
     .promo {
         background: url('./../../../assets/image/index/bg.png') rgba(36, 36, 36, 0.6);
         background-size: auto;
@@ -987,6 +993,11 @@ header {
     .about {
         padding-top: 84px;
         padding-bottom: 84px;
+        &__header {
+            h2 {
+                font-size: 20px;
+            }
+        }
         &__description {
             margin-top: 0;
             h3 {
@@ -1000,6 +1011,11 @@ header {
     }
 
     .steps {
+        &__header {
+            h2 {
+                font-size: 20px;
+            }
+        }
         &__describe {
             max-width: 100%;
         }

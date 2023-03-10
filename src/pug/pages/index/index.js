@@ -4,6 +4,8 @@ import './index.scss';
 import './../../components/swiper/swiper-bundle.min.scss';
 import Swiper from './../../components/swiper/swiper-bundle.min.js';
 
+import './../../components/promo-gallery/_promo-gallery.js';
+
 window.addEventListener('DOMContentLoaded', () => {
 
 	//  Swiper

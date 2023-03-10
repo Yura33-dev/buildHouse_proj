@@ -12,6 +12,9 @@
 // responsive components
 // @import './pug/components/Z-media-requests/media-components';
 
+body {
+    position: relative;
+}
 .container {
     margin: 0 auto;
     position: relative;

@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let div;
 
     container.addEventListener('click', function (e) {
-        if(e.target) {
+        if(e.target && e.target.classList.contains('gallery__item')) {
             const image = e.target.closest('.promo-gallery__item').firstElementChild;
 
             div = document.createElement('div');
@@ -20,19 +20,17 @@ window.addEventListener('DOMContentLoaded', () => {
             div.appendChild(img);
             document.body.appendChild(div);
 
+            layout.style.animation = 'fadeIn .2s';
             layout.style.display = 'block';
+            layout.setAttribute('data-openedPhoto', true);
         }
     });
 
     const closePhoto =  () => {
         div.style.animation = 'fadeOut .2s';
         setTimeout(() => div.remove(), 180);
-        layout.style.display = 'none';
+        layout.style.animation = 'fadeOut .2s';
+        setTimeout(() => layout.style.display = 'none', 180);
+        layout.setAttribute('data-openedPhoto', false);
     };
-    
-    layout.addEventListener('click', (e) => {
-        if(e.target) {
-            closePhoto();
-        }
-    });
 });
